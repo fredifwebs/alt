@@ -1,45 +1,38 @@
+<?php include 'mobile.php';
+mobile_device_detect(true,true,true,true,true,true,'http://www.fredericchien.com/alt',false);
+?>
 <!doctype html>
 <html lang="pt-br">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title></title>
+<title>ALT Fretamento Curitiba Transporte Executivo Curitiba Aluguel Van Locação de Van para Turismo Curitiba</title>
 
-<meta name="keywords" content="" /> 
-<meta name="description" content="" /> 
-
+<meta name="keywords" content="Fretamentos em Curitiba, Transporte Executivo em Curitiba, Aluguel de Van em Curitiba, Locacao de Van para Turismo em Curitiba" /> 
+<meta name="description" content="Fretamentos em Curitiba, Transporte Executivo em Curitiba, Aluguel de Van em Curitiba, Locação de Van para Turismo em Curitiba" /> 
 <?php include 'includes/head.php';?>
 </head>
 <body>
-<header>
-	<div class="center">
-		<img src="img/logo.png" alt="" title="">
-	</div>
-	<ul class="indiomas">
-		<li><a href=""><img src="img/br_flag.png" alt="" title=""></a>
-		<li><a href=""><img src="img/es_flag.png" alt="" title=""></a>
-		<li><a href=""><img src="img/us_flag.png" alt="" title=""></a>
-	</ul>
-	<div class="clear"></div>
-	
-	<nav id="menu">
+<?php include 'includes/header.php';?>
+<nav id="menu">
 		<div class="center">
+		<div class="conteudo">
 			<ul>
-				<li><a href="#"><img src="img/home_1.png" alt="" title="" ></a>
+				<li><a href="index.php"><img src="img/home_1.png" alt="" title="" ></a>
 				<li><span>|</span>
-				<li><a href="#">fretamentos curitiba</a>
+				<li><a href="transporte-executivo-curitiba-empresa-de-fretamento.php">fretamentos curitiba</a>
 				<li><span>|</span>
-				<li><a href="#">quem somos</a>
+				<li><a href="empresa-de-fretamento-curitiba-alt-proposta.php">quem somos</a>
 				<li><span>|</span>
-				<li><a href="#">diferenciais</a>
+				<li><a href="transporte-diferenciado-van-curitiba.php">diferenciais</a>
 				<li><span>|</span>
-				<li><a href="#">orçamento</a>
+				<li><a href="preco-fretamento-curitiba-turismo.php">orçamento</a>
 				<li><span>|</span>
-				<li><a href="#">contato</a>
+				<li><a href="alt-transporte-van-contato.php">contato</a>
 			</ul>
+		</div>	
 		</div>
 		<div class="clear"></div>	
 	</nav>
-</header>
 <div class="clear"></div>
 <section id="banner">
 	<ul class="rslides">
@@ -49,67 +42,70 @@
 </section>
 <section>
 	<div class="center">
-		<article class="tabela">
-			<a href="#">PEÇA UM ORÇAMENTO</a>
-		</article>
+		<article class="principal">	
+			<article class="tabela">
+				<a href="#" class="a_h1">PEÇA UM ORÇAMENTO</a><br>
+				<a href="#" class="a_h2">SOLICITE AGORA UMA COTAÇÃO DE FRETAMENTO</a>
+			</article>
+		</article>	
 	</div>
 </section>
 
 <section>
 	<div class="center">
-		<article>
-			<h1>TRANSPORTE EXECUTIVO CURITIBA FRETAMENTO</h1>
+		<article class="principal">
+		<div class="conteudo">
+			<h1>TRANSPORTE EXECUTIVO CURITIBA FRETAMENTO</h1><br>
 			<p>A <b>ALT Transporte Executivo e Empresa de Fretamento</b> tem como proposta a prestação diferenciada de serviços
 			de locomoção coletiva como: <b>transporte executivo, fretamento e turismo, transporte de van,
-			aluguel de van, transporte de funcionários.</b></p>
+			aluguel de van, transporte de funcionários.</b></p><br>
 			<p>O veículo estendido para <b>transporte executivo</b> é o preferido de grandes empresas, pois apresenta detalhes
 			cuidadosos como, por exemplo, bancos customizados superconfortáveis, teto alto, wifi a bordo, cortinas, luz
-			de LED, etc.</p>
+			de LED, etc.</p><br>
 			<p>A ALT <b>Transporte Executivo</b> e <b>Fretamento</b> preza pelo conforto, educação e discrição nos serviços.
-			Solicite um orçamento para sua demanda de <b><u>transporte executivo</u></b> e <b><u>fretamento em Curitiba</u></b> e região.</p>
+			Solicite um orçamento para sua demanda de <b><u>transporte executivo</u></b> e <b><u>fretamento em Curitiba</u></b> e região.</p><br>
+		</div>
 		</article>
 	</div>
 </section>
 	
-<section>
+<section class="padrao">
 	<div class="center">
-		<article>
+		<article class="principal">
+		<div class="conteudo">
 			<h1>PADRÃO DOS VEÍCULOS TRANSPORTE EXECUTIVO</h1>
 			
-			<ul>
-				<li><span title="wifi 4G" class="tooltip"><img src="img/h_01.png" alt="" src=""></span>
-				<li><span title="mp3 USB + phone" class="tooltip"><img src="img/h_02.png" alt="" src=""></span>
-				<li><span title="tv" class="tooltip"><img src="img/h_03.png" alt="" src=""></span>
-				<li><span title="motorista bilíngue" class="tooltip"><img src="img/h_04.png" alt="" src=""></span>
-				<li><span title="ar condicionado" class="tooltip"><img src="img/h_05.png" alt="" src=""></span>
-				<li><span title="emissão reduzida de poluentes" class="tooltip"><img src="img/h_06.png" alt="" src=""></span>
-				<li><span title="Bebidas" class="tooltip"><img src="img/h_07.png" alt="" src=""></span>
-				<li><span title="Crédito, Débito, Faturamento" class="tooltip"><img src="img/h_08.png" alt="" src=""></span>
-				<li><span title="Iluminação LED" class="tooltip"><img src="img/h_09.png" alt="" src=""></span>
-				<li><span title="disponibilidade 24h" class="tooltip"><img src="img/h_10.png" alt="" src=""></span>
+			<ul class="pdesk">
+				<li><a class="tooltips"><img src="img/h_01.png" ><span class="wifi">wifi 4G</span></a>
+				<li><a class="tooltips"><img src="img/h_02.png" ><span class="mp3">mp3 USB + phone</span></a>
+				<li><a class="tooltips"><img src="img/h_03.png" ><span class="tv">tv</span></a>
+				<li><a class="tooltips"><img src="img/h_04.png" ><span class="motorista">motorista bilíngue</span></a>
+				<li><a class="tooltips"><img src="img/h_05.png" ><span class="ar">ar condicionado</span></a>
+				<li><a class="tooltips"><img src="img/h_06.png" ><span class="emissao">emissão reduzida de poluentes</span></a>
+				<li><a class="tooltips"><img src="img/h_07.png" ></a>
+				<li><a class="tooltips"><img src="img/h_08.png" ><span class="credito">Crédito, Débito, Faturamento</span></a>
+				<li><a class="tooltips"><img src="img/h_09.png" ><span class="led">Iluminação LED</span></a>
+				<li><a class="tooltips"><img src="img/h_10.png" ><span class="disp">disponibilidade 24h</span></a>
 			</ul>
+			
+			<ul class="pmobile">
+				<li><p><img src="img/h_01.png" >wifi 4G</p>
+				<li><p><img src="img/h_02.png" >mp3 USB + phone</p>
+				<li><p><img src="img/h_03.png" >tv</p>
+				<li><p><img src="img/h_04.png" >motorista bilíngue</p>
+				<li><p><img src="img/h_05.png" >ar condicionado</p>
+				<li><p><img src="img/h_06.png" >emissão reduzida de poluentes</p>
+				<li><p><img src="img/h_07.png" >Bebidas</p>
+				<li><p><img src="img/h_08.png" >Crédito, Débito, Faturamento</p>
+				<li><p><img src="img/h_09.png" >Iluminação LED</p>
+				<li><p><img src="img/h_10.png" >disponibilidade 24h</p>
+			</ul>
+			<div class="clear"></div>
+		</div>	
 		</article>
 	</div>
 </section>
 
-<footer>
-<section>
-	<div class="center">
-		<nav>
-			<ul>
-				<li><a href="#">HOME</a>
-			</ul>
-			
-			<ul>
-				<li><a href="#">FRETAMENTOS CURITIBA</a>
-			</ul>
-		</nav>
-	</div>
-</section>		
-</footer>
-<div class="center">
-	<address>Av. Presidente Kennedy, 1491 sala 104 • Curitiba - PR • 41 3117 9477 • alt@alt.tur.br</address>
-	<address>América Latina Turismo 2014 • © Todos os direitos reservados</address>
-</div>
+<?php include 'includes/footer.php';?>
 </body>
 </html>

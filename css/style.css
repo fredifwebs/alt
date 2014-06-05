@@ -1,3 +1,23 @@
+@font-face {
+font-family: arial;
+src: url('../fonts/arial.ttf');
+}
+@font-face {
+font-family: ArnoPro;
+src: url('../fonts/ArnoPro-Regular.otf');
+}
+@font-face {
+font-family: CALIBRI;
+src: url('../fonts/CALIBRI.TTF');
+}
+@font-face {
+font-family: CALIBRIB;
+src: url('../fonts/CALIBRIB.TTF');
+}
+@font-face {
+font-family: CALIBRII;
+src: url('../fonts/CALIBRII.TTF');
+}
 @CHARSET "ISO-8859-1";
 /* ------- GERAL ------- */
 * { margin: 0; padding: 0; z-index: 1; } /* reseta todas as margens, paddings e define o nivel das camadas do site */
@@ -55,19 +75,31 @@ html, body {
 	height:100%;
 	font-size:14px;
 	color:#000;
-	background:#f1f6ea;
+	background:#3d3c3d;
 	overflow-x:hidden;
 }
 
 a{color:#FFF; text-decoration: none; font-family: Arial; font-weight: bold;}
 
+a.voltar{color:#242424; font-family:CALIBRII; font-size: 18px; float: right;}
+
 span{color:#FFF;}
 
-p{}
+span.f_span{color: #55a998;}
 
-address{text-align: center;}
+p{color:#242424; font-family:CALIBRI; font-size: 16px;}
 
-h1{font-family: Arial; font-weight: bold; font-size: 20px; text-align: center;}
+p.italico{color:#242424; font-family:CALIBRII; font-size: 14px;}
+
+b{color:#242424; font-family:CALIBRI; font-size: 16px;}
+
+.conteudo{margin: 0px auto; width: 650px;}
+
+address{text-align: center; color:#242424; font-family:CALIBRIB; font-size: 16px;padding-top: 5px;}
+address.second{font-family:CALIBRI;font-size: 14px;}
+
+h1{font-family: CALIBRIB; color:#242424; font-size: 28px; text-align: left;}
+h2{font-family: CALIBRIB; color:#242424; font-size: 18px; text-align: left;}
 
 .txt{ position:absolute; top:-99999999em}
 
@@ -75,59 +107,340 @@ strong{ font-weight:bold;}
 
 header, section, footer, aside, article, figure {display: block; z-index:999px !important;}
 
-.center{width: 1024px;margin:0px auto;}
+.center{width: 952px;margin:0px auto;}
 
 /*HEADER*/
-header{width: 100%;min-width:1024px; min-height:171px; background: url(../img/topo.png)no-repeat top right;}
-header ul.indiomas{float: right; margin: 30px;}
-header ul.indiomas li{display: inline-block;}
-header ul.indiomas li img{width: 50%;}
+header{width: 952px;margin:0px auto; min-height:171px; background: url(../img/header_t.png)no-repeat top right #f0f7eb;}
+header ul.idiomas{float: right; margin: 35px 0px 10px 0px;}
+header ul.idiomas li{display: inline-block;}
+header ul.idiomas li img{width: 50%;}
+header img.logo{position: relative;left: 10px;top: 20px;display: block;}
 
 /*MENU*/
-header nav#menu{width: 100%; height: 40px; background: #55a998;text-align: center; border-bottom: solid 2px #4f655d;}
-header nav#menu ul li{display: inline-block; padding: 10px;}
-header nav#menu ul li a{text-transform: uppercase;}
-header nav#menu ul li a.ativo{color:#c4df54;}
-header nav#menu ul li a:hover{color:#c4df54;}
+header #menumobile{display: none;}
+nav#menu{width: 952px;margin:0px auto; height: 25px; background: #55a998;text-align: center; border-bottom: solid 2px #4f655d;}
+nav#menu ul li{display: inline-block; padding-left: 6px;}
+nav#menu ul li a{text-transform: uppercase; font-size: 13px;}
+nav#menu ul li a.ativo{color:#c4df54;}
+nav#menu ul li a:hover{color:#c4df54;}
 
 /*SECTION*/
-section{width: 100%; min-width:1024px; margin-bottom: 20px;}
+section{width: 100%;}
+section.contato{width: 952px;margin:0px auto; background: #E6E7E8; height: 220px;}
 
 /*BANNER*/
-section#banner .rslides img { display: block;height: auto;float: left;width: 100%; min-width:1024px;border: 0;}
+section#banner .rslides img { display: block;height: auto;float: left;width: 100%; border: 0;}
+section#banner .rslides {position: relative;list-style: none;overflow: hidden;width: 952px;padding: 0;margin: 0px auto;}
 
 /*ARTICLE*/
-article.tabela{background:url(../img/tab.png)no-repeat top center; width: 555px; height: 113px; margin: 0px auto; display: block;}
-article ul li{display: inline-block;}
+article.principal{width: 952px;margin: 0px auto; background: #FFF;}
+article.principal .imagem{width: 440px; height: 210px; float: right;}
+article.principal .imagem1{width: 370px; height: 300px; float: right;}
+ul.fotos li{display: inline-block;width: 15%;margin: 10px 0px 10px 0px;}
+ul.fotos li img{width: 98px; height: 78px; border-radius: 10px;}
+ul.logos li{display: inline-block; margin-left: 20px;}
+ul.logos li:FIRST-CHILD{margin-left: 0px;}
+article.tabela{background:url(../img/tab.png)no-repeat top left #FFF; width: 650px; height: 125px; display: block; margin: 0px auto;}
+article.tabela a.a_h1{position: relative;top: 20%;left: 10%;font-size: 24px;}
+article.tabela a.a_h2{position: relative;top: 34%;left: 10%;font-size: 15px;}
+article.tabela a.a_h3{position: relative;top: 20%;left: 10%;font-size: 18px;}
+article.tabela a.a_h1:hover{opacity:0.8;}
+article.tabela a.a_h2:hover{opacity:0.8;}
+article.tabela a.a_h3:hover{opacity:0.8;} 
+section.padrao article ul.pdesk{padding: 20px 0px 60px 0px;}
+section.padrao article ul.pdesk li:FIRST-CHILD{margin-left: 0px;}
+section.padrao article ul.pdesk li{display: inline-block; margin: 0px auto; margin-left: 10px;}
+section.padrao article ul.pmobile{display: none;}
 
 /*FOOTER*/
-footer{width: 100%; background: #55a998; border-bottom: solid 2px #4f655d; min-height: 200px;}
+footer{width: 100%; height: 135px;}
+section.s_footer{width: 952px;margin:0px auto; background: #55a998; border-bottom: solid 2px #4f655d; min-height: 200px;}
+section .f_center{width: 720px; margin: 0px auto; padding: 20px;}
+footer article.f_nav1{width: 70px; min-height: 100px; float: left; font-size: 12px;}
+footer article.f_nav2{width: 190px; min-height: 100px; float: left; font-size: 12px;}
+footer article.f_nav3{width: 180px; min-height: 100px; float: left; font-size: 12px;}
+footer article.f_nav4{width: 110px; min-height: 100px; float: left; font-size: 12px;}
+footer article.f_nav5{width: 100px; min-height: 100px; float: left; font-size: 12px;}
+footer article.f_nav6{width: 70px; min-height: 100px; float: left; font-size: 12px;}
 
+footer article.f_nav1 a, .f_nav2 a,.f_nav3 a,.f_nav4 a,.f_nav5 a,.f_nav6 a{font-size: 9px;}
+footer article.f_nav1 b, .f_nav2 b,.f_nav3 b,.f_nav4 b,.f_nav5 b,.f_nav6 b{font-size: 14px; color:#FFF;}
 
-.tooltip{
-    display: inline;
-    position: relative;
+#p_footer{height:90px; width: 952px; background: #FFF; margin: 0px auto;}
+
+img.face{float: right; margin-right: 110px;}
+
+/*Form*/
+label {display:block;margin-top:20px;letter-spacing:2px;color:#000000;}
+form {margin:0 auto 15%;margin-bottom: 15px;float: left;}
+textarea {height:213px !important;background:#FFF;}
+input, textarea, select{width:330px;height:32px;background:#FFF;border:1px solid #dedede;padding:4px;margin-top:3px;
+font-size:0.9em;color:#000;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+input:focus, textarea:focus {border:1px solid #97d6eb;}
+#submit {background: url(../img/bt.png)no-repeat;border: none;width: 110px;height: 40px;text-indent: -99999999px;cursor: pointer;float: right;}
+#submit:hover {opacity:.9;}
+legend{font-family: CALIBRIB; color:#242424;}
+label{font-family: CALIBRI; color:#242424;}
+fieldset{margin-bottom: 40px;}
+select{height: 41px;}
+/*DADOS PESSOAIS*/
+fieldset.dadospessoais input#nome{width: 440px;}
+fieldset.dadospessoais input#cpf{width: 180px;}
+fieldset.dadospessoais input#email{width: 245px;}
+fieldset.dadospessoais input#fcelular{width: 180px;}
+fieldset.dadospessoais input#ffixo{width: 180px;}
+
+/*DADOS DA VIAGEM*/
+fieldset.dadosdaviagem input#lorigem{width: 310px;}
+fieldset.dadosdaviagem input#ldestino{width: 310px;}
+fieldset.dadosdaviagem input#dpartida{width: 135px;}
+fieldset.dadosdaviagem input#dretorno{width: 135px;}
+fieldset.dadosdaviagem input#hpartida{width: 130px;}
+fieldset.dadosdaviagem input#hretorno{width: 130px;}
+fieldset.dadosdaviagem input#npessoas{width: 90px;}
+fieldset.dadosdaviagem select#paradas{width: 135px;}
+fieldset.dadosdaviagem input#nparadas{width: 135px;}
+fieldset.dadosdaviagem input#finalidade{width: 100%;}
+
+:-moz-placeholder {color: #000;} 
+::-webkit-input-placeholder {color: #000;}
+
+/*CONTATO*/
+form.contato {margin:0 auto 15%;margin-bottom: 15px;float: none;}
+form.contato label {display:block;margin-top:20px;letter-spacing:2px;color:#000000;}
+form.contato input, textarea {height:32px;background:#FFF;border:1px solid #dedede;padding:4px;margin-top:3px;
+font-size:0.9em;color:#000;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+form.contato input:focus, textarea:focus {border:1px solid #97d6eb;}
+form.contato input#nomecontato {width: 100%;}
+form.contato input#emailcontato {width: 465px;}
+form.contato input#fonecontato {width: 280px;}
+form.contato textarea{width: 100%;}
+
+/*TOOLTIPS*/
+a.tooltips {position: relative;display: inline;}
+a.tooltips span {position: absolute;color: #FFFFFF;background: #52a999;height: 30px;
+line-height: 30px;text-align: center;visibility: hidden;border-radius: 6px;}
+a.tooltips span.wifi {width:55px;}
+a.tooltips span.mp3 {width:130px;}
+a.tooltips span.tv {width:40px;}
+a.tooltips span.motorista {width:70px;}
+a.tooltips span.ar {width:110px;}
+a.tooltips span.emissao {width:200px;}
+a.tooltips span.credito {width:190px;}
+a.tooltips span.led {width:110px;}
+a.tooltips span.disp {width:130px;}
+a.tooltips span:after {content: '';position: absolute;bottom: 100%;left: 50%;margin-left: -8px;width: 0; height: 0;
+border-bottom: 8px solid #52a999;border-right: 8px solid transparent;border-left: 8px solid transparent;}
+a:hover.tooltips span {visibility: visible;top: 40px;margin-left: -110px;z-index: 999;}
+a:hover.tooltips span.wifi {left: 198%;}
+a:hover.tooltips span.mp3 {left: 135%;}
+a:hover.tooltips span.tv {left: 215%;}
+a:hover.tooltips span.motorista {left: 185%;}
+a:hover.tooltips span.ar {left: 155%;}
+a:hover.tooltips span.emissao {left: 65%;}
+a:hover.tooltips span.credito {left: 75%;}
+a:hover.tooltips span.led {left: 155%;}
+a:hover.tooltips span.disp {left: 135%;}
+
+/*RESPONSIVE*/
+@media only screen and (min-width: 240px) and (max-width: 320px)  {
+	body{overflow-x: hidden; }
+	header{background: none;}
+	header img{display: block; margin: 0px auto; position: relative; top:45px;}
+	article.tabela{display: none;}
+	article.principal {width: 90%;}
+	ul.idiomas{display: none;}
+	h1{font-size: 20px;}
+	footer{display: none;}
+	section.padrao article ul.pdesk{display: none;}
+	section.padrao article ul.pmobile{display: block;}
+	section.padrao article ul.pmobile li{display: block;}
+	article.principal .imagem{float: none; width: 432px; height: 160px;}
+	article.principal .imagem img{width: 70%;}	
+	article.principal .imagem1{float: none; height: 250px;}
+	article.principal .imagem1 img{width: 70%}
+	ul.fotos li {width: 20%;}
+	ul.fotos li img{width: 50px; height: 90px;}
+	ul.logos li {display: block;}
+	fieldset.dadospessoais input#nome{width: 100%;}
+	fieldset.dadospessoais input#cpf{width: 100%;}
+	fieldset.dadospessoais input#email{width: 100%;}
+	fieldset.dadospessoais input#fcelular{width: 100%;}
+	fieldset.dadospessoais input#ffixo{width: 100%;}
+	fieldset.dadosdaviagem input#lorigem{width: 100%;}
+	fieldset.dadosdaviagem input#ldestino{width: 100%;}
+	fieldset.dadosdaviagem input#dpartida{width: 100%;}
+	fieldset.dadosdaviagem input#dretorno{width: 100%;}
+	fieldset.dadosdaviagem input#hpartida{width: 100%;}
+	fieldset.dadosdaviagem input#hretorno{width: 100%;}
+	fieldset.dadosdaviagem input#npessoas{width: 100%;}
+	fieldset.dadosdaviagem select#paradas{width: 100%;}
+	fieldset.dadosdaviagem input#nparadas{width: 100%;}
+	fieldset.dadosdaviagem input#finalidade{width: 100%;}
+	form.contato select{width: 100%;}
+	form.contato input#nomecontato {width: 100%;}
+	form.contato input#emailcontato {width: 100%;}
+	form.contato input#fonecontato {width: 100%;}
+	form.contato textarea{width: 100%;}
+	
+	nav#menu{ display:none !important;}
+	nav#menumobile{ display:block !important; width:100%; height:45px; background:#52a999; position:fixed; top:0px; left:0px; z-index:9999999 !important}
+	nav#menumobile .fone{ text-align:center; padding:10px 0; color:#FFF; font-family:'Jura', sans-serif; font-size:18px;}
+	nav#menumobile a.openmenu{ display:block; width:30px; height:30px; background:url(../img/ico_menu_mobile.png) no-repeat; position:absolute; top:12%; right:5%;}
+	nav#menumobile ul#topnavmobile{ display:none; position:absolute; top:45px; right:0px; width:100%; overflow:hidden}
+	nav#menumobile ul#topnavmobile li{background:#242424; width:100%; text-align:center; padding:3px 0;}
+	nav#menumobile ul#topnavmobile li a{ text-decoration:none; color:#fff;  font-size:18px; font-family: 'Segoe UI', sans-serif;}
+	.center{width:90%;}
+	
 }
-.tooltip:hover:after{
-    background: #56ac9b;
-    background: rgba(86,172,155);
-    border-radius: 5px;
-    top: 45px;
-    color: #fff;
-    content: attr(title);
-    right: -8%;
-    padding: 5px 15px;
-    position: absolute;
-    z-index: 98;
-    width: 40px;
+
+@media only screen and (min-width: 321px) and (max-width: 500px)  {
+	body{overflow-x: hidden; }
+	header{background: none;}
+	header img{display: block; margin: 0px auto; position: relative; top:45px;}
+	article.tabela{display: none;}
+	article.principal {width: 90%;}
+	ul.idiomas{display: none;}
+	h1{font-size: 20px;}
+	footer{display: none;}
+	section.padrao article ul.pdesk{display: none;}
+	section.padrao article ul.pmobile{display: block;}
+	section.padrao article ul.pmobile li{display: block;}
+	article.principal .imagem{float: none; width: 432px; height: 160px;}
+	article.principal .imagem img{width: 70%;}	
+	article.principal .imagem1{float: none; height: 250px;}
+	article.principal .imagem1 img{width: 70%}
+	ul.fotos li {width: 20%;}
+	ul.fotos li img{width: 50px; height: 90px;}
+	ul.logos li {display: block;}
+	fieldset.dadospessoais input#nome{width: 100%;}
+	fieldset.dadospessoais input#cpf{width: 100%;}
+	fieldset.dadospessoais input#email{width: 100%;}
+	fieldset.dadospessoais input#fcelular{width: 100%;}
+	fieldset.dadospessoais input#ffixo{width: 100%;}
+	fieldset.dadosdaviagem input#lorigem{width: 100%;}
+	fieldset.dadosdaviagem input#ldestino{width: 100%;}
+	fieldset.dadosdaviagem input#dpartida{width: 100%;}
+	fieldset.dadosdaviagem input#dretorno{width: 100%;}
+	fieldset.dadosdaviagem input#hpartida{width: 100%;}
+	fieldset.dadosdaviagem input#hretorno{width: 100%;}
+	fieldset.dadosdaviagem input#npessoas{width: 100%;}
+	fieldset.dadosdaviagem select#paradas{width: 100%;}
+	fieldset.dadosdaviagem input#nparadas{width: 100%;}
+	fieldset.dadosdaviagem input#finalidade{width: 100%;}
+	form.contato select{width: 100%;}
+	form.contato input#nomecontato {width: 100%;}
+	form.contato input#emailcontato {width: 100%;}
+	form.contato input#fonecontato {width: 100%;}
+	form.contato textarea{width: 100%;}
+	
+	nav#menu{ display:none !important;}
+	nav#menumobile{ display:block !important; width:100%; height:45px; background:#52a999; position:fixed; top:0px; left:0px; z-index:9999999 !important}
+	nav#menumobile .fone{ text-align:center; padding:10px 0; color:#FFF; font-family:'Jura', sans-serif; font-size:18px;}
+	nav#menumobile a.openmenu{ display:block; width:30px; height:30px; background:url(../img/ico_menu_mobile.png) no-repeat; position:absolute; top:12%; right:5%;}
+	nav#menumobile ul#topnavmobile{ display:none; position:absolute; top:45px; right:0px; width:100%; overflow:hidden}
+	nav#menumobile ul#topnavmobile li{background:#242424; width:100%; text-align:center; padding:3px 0;}
+	nav#menumobile ul#topnavmobile li a{ text-decoration:none; color:#fff;  font-size:18px; font-family: 'Segoe UI', sans-serif;}
+	.center{width:90%;}
 }
-.tooltip:hover:before{
-    border: solid;
-    border-color: #56ac9b transparent;
-    border-width: 0px 6px 6px 6px;
-    top: 39px;
-    content: "";
-    left: 35%;
-    position: absolute;
-    z-index: 99;
+
+@media only screen and (min-width: 501px) and (max-width: 767px){
+	body{overflow-x: hidden; }
+	header{background: none;}
+	header img{display: block; margin: 0px auto; position: relative; top:45px;}
+	article.tabela{display: none;}
+	article.principal {width: 90%;}
+	ul.idiomas{display: none;}
+	h1{font-size: 20px;}
+	footer{display: none;}
+	section.padrao article ul.pdesk{display: none;}
+	section.padrao article ul.pmobile{display: block;}
+	section.padrao article ul.pmobile li{display: block;}
+	article.principal .imagem{float: none; width: 432px; height: 160px;}
+	article.principal .imagem img{width: 70%;}	
+	article.principal .imagem1{float: none; height: 250px;}
+	article.principal .imagem1 img{width: 70%}
+	ul.fotos li {width: 20%;}
+	ul.fotos li img{width: 50px; height: 90px;}
+	ul.logos li {display: block;}
+	fieldset.dadospessoais input#nome{width: 100%;}
+	fieldset.dadospessoais input#cpf{width: 100%;}
+	fieldset.dadospessoais input#email{width: 100%;}
+	fieldset.dadospessoais input#fcelular{width: 100%;}
+	fieldset.dadospessoais input#ffixo{width: 100%;}
+	fieldset.dadosdaviagem input#lorigem{width: 100%;}
+	fieldset.dadosdaviagem input#ldestino{width: 100%;}
+	fieldset.dadosdaviagem input#dpartida{width: 100%;}
+	fieldset.dadosdaviagem input#dretorno{width: 100%;}
+	fieldset.dadosdaviagem input#hpartida{width: 100%;}
+	fieldset.dadosdaviagem input#hretorno{width: 100%;}
+	fieldset.dadosdaviagem input#npessoas{width: 100%;}
+	fieldset.dadosdaviagem select#paradas{width: 100%;}
+	fieldset.dadosdaviagem input#nparadas{width: 100%;}
+	fieldset.dadosdaviagem input#finalidade{width: 100%;}
+	form.contato select{width: 100%;}
+	form.contato input#nomecontato {width: 100%;}
+	form.contato input#emailcontato {width: 100%;}
+	form.contato input#fonecontato {width: 100%;}
+	form.contato textarea{width: 100%;}
+	
+	nav#menu{ display:none !important;}
+	nav#menumobile{ display:block !important; width:100%; height:45px; background:#52a999; position:fixed; top:0px; left:0px; z-index:9999999 !important}
+	nav#menumobile .fone{ text-align:center; padding:10px 0; color:#FFF; font-family:'Jura', sans-serif; font-size:18px;}
+	nav#menumobile a.openmenu{ display:block; width:30px; height:30px; background:url(../img/ico_menu_mobile.png) no-repeat; position:absolute; top:12%; right:5%;}
+	nav#menumobile ul#topnavmobile{ display:none; position:absolute; top:45px; right:0px; width:100%; overflow:hidden}
+	nav#menumobile ul#topnavmobile li{background:#242424; width:100%; text-align:center; padding:3px 0;}
+	nav#menumobile ul#topnavmobile li a{ text-decoration:none; color:#fff;  font-size:18px; font-family: 'Segoe UI', sans-serif;}
+	.center{width:90%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	body{overflow-x: hidden; }
+	header{background: none;}
+	header img{display: block; margin: 0px auto; position: relative; top:45px;}
+	article.tabela{display: none;}
+	article.principal {width: 90%;}
+	ul.idiomas{display: none;}
+	h1{font-size: 20px;}
+	footer{display: none;}
+	section.padrao article ul.pdesk{display: none;}
+	section.padrao article ul.pmobile{display: block;}
+	section.padrao article ul.pmobile li{display: block;}
+	article.principal .imagem{float: none; width: 432px; height: 160px;}
+	article.principal .imagem img{width: 70%;}	
+	article.principal .imagem1{float: none; height: 250px;}
+	article.principal .imagem1 img{width: 70%}
+	ul.fotos li {width: 20%;}
+	ul.fotos li img{width: 50px; height: 90px;}
+	ul.logos li {display: block;}
+	fieldset.dadospessoais input#nome{width: 100%;}
+	fieldset.dadospessoais input#cpf{width: 100%;}
+	fieldset.dadospessoais input#email{width: 100%;}
+	fieldset.dadospessoais input#fcelular{width: 100%;}
+	fieldset.dadospessoais input#ffixo{width: 100%;}
+	fieldset.dadosdaviagem input#lorigem{width: 100%;}
+	fieldset.dadosdaviagem input#ldestino{width: 100%;}
+	fieldset.dadosdaviagem input#dpartida{width: 100%;}
+	fieldset.dadosdaviagem input#dretorno{width: 100%;}
+	fieldset.dadosdaviagem input#hpartida{width: 100%;}
+	fieldset.dadosdaviagem input#hretorno{width: 100%;}
+	fieldset.dadosdaviagem input#npessoas{width: 100%;}
+	fieldset.dadosdaviagem select#paradas{width: 100%;}
+	fieldset.dadosdaviagem input#nparadas{width: 100%;}
+	fieldset.dadosdaviagem input#finalidade{width: 100%;}
+	form.contato select{width: 100%;}
+	form.contato input#nomecontato {width: 100%;}
+	form.contato input#emailcontato {width: 100%;}
+	form.contato input#fonecontato {width: 100%;}
+	form.contato textarea{width: 100%;}
+	
+	nav#menu{ display:none !important;}
+	nav#menumobile{ display:block !important; width:100%; height:45px; background:#52a999; position:fixed; top:0px; left:0px; z-index:9999999 !important}
+	nav#menumobile .fone{ text-align:center; padding:10px 0; color:#FFF; font-family:'Jura', sans-serif; font-size:18px;}
+	nav#menumobile a.openmenu{ display:block; width:30px; height:30px; background:url(../img/ico_menu_mobile.png) no-repeat; position:absolute; top:12%; right:5%;}
+	nav#menumobile ul#topnavmobile{ display:none; position:absolute; top:45px; right:0px; width:100%; overflow:hidden}
+	nav#menumobile ul#topnavmobile li{background:#242424; width:100%; text-align:center; padding:3px 0;}
+	nav#menumobile ul#topnavmobile li a{ text-decoration:none; color:#fff;  font-size:18px; font-family: 'Segoe UI', sans-serif;}
+	.center{width:90%;}
+	
 }

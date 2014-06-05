@@ -7,10 +7,6 @@ var test_canvas = document.createElement("canvas");
 	}
 	 
 	 $( "a.openmenu" ).click(function() {$('ul#topnavmobile').slideToggle( "slow" );});
-	// Slideshow 1
-     $(".rslides").responsiveSlides({
-       speed: 1000
-     });
 	 
 });	
 
